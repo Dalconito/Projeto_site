@@ -30,5 +30,4 @@ module.exports = function(app)
       console.log(existente);
       res.render("login", {existente: existente});
     });
-    
 };

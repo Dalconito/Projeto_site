@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="fotos/LT.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 </head>
-<body>
+<body class="body" id="body_centro">
     <form action="" method="get">
         <label for="login">Usuario</label>
         <input type="text" name="login_usr" id="login">
@@ -13,10 +15,10 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha_usr" id="senha">
 
-        <input type="submit" value="Cadastrar">
+        <input class="button" type="submit" value="Cadastrar" class="button">
     </form>
     <p><%=envio%></p>
-    <form action="https://senhas.onrender.com"> <input type="submit" value=" VOLTAR PARA LOGIN"></form>
+    <form action="http://localhost:31000"> <input type="submit" value="LOGIN" class="button"></form>
     
 </body>
 </html>

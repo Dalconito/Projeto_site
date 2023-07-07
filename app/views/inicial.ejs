@@ -2,94 +2,38 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
-    <style>
-      .button 
-      {
-        background-color: #0d0f0fbb; /* Green */
-        color: rgba(245, 246, 245, 0.34);
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        cursor: pointer;
-        font-size: 20px;
-        border-top-left-radius:     40px;
-        border-bottom-right-radius: 40px;
-        border-top-right-radius:    40px;
-      }
-      #body
-      {
-      background-color: rgba(0, 0, 0, 0.816);
-      color: rgba(239, 227, 227, 0.936);
-      }
-      #botão1
-      {
-      font: size 2px;
-      } 
-      .fname
-      {
-      background-color: green;
-      color: green;
-      background: transparent;
-      }
-      input
-      {
-      background-color: rgba(67, 63, 63, 0.986);
-      color: rgba(239, 227, 227, 0.936);
-      font-size: 18px;
-      }
-      div
-      {
-      margin-bottom: 10px;
-      }
-      
-      datalist
-      {
-      background-color: rgba(67, 63, 63, 0.986);
-      color: rgba(239, 227, 227, 0.936);
-      font-size: 18px;
-      }
-      select
-      {
-      background-color: rgba(67, 63, 63, 0.986);
-      color: rgba(239, 227, 227, 0.936);
-      font-size: 18px;
-      }
-      #escrita
-      {
-      font-size : 25px;
-      }</style>
-
     <title>Inicio</title>
     <h1>Consulta de Titulos</h1>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="fotos/LT.jpg" type="image/x-icon">
+
     
 </head>
 
-<body id="body">
+<body class="body">
   <table>
     <form action="" target="_self" method="get">
-      <tr><td><label for="nome_titulo" id="escrita">ID: </label></td>
+      <tr><td><label for="nome_titulo" id="escrita">Nome do Titulo : </label></td>
       <td><input type="text" id="fname" name="nome_titulo"></td></tr>
 
-      <tr><td><label for="valor_titulo" id="escrita">Senha: </label></td>
+      <tr><td><label for="valor_titulo" id="escrita">Valor : </label></td>
       <td><input type="text" id="lname" name="valor_titulo"></td></tr>
 
       <tr><td><label for="valor_titulo" id="escrita" >Categoria: </label></td>
-        <td><select list="valor_titulo" id="categoria_menu" name="categoria_titulo">
-        <option value="Funcionario">Empresas</option>
-        <option value="Tecnologia">Email</option>
-        <option value="Aluguel">Serviços</option>
-        <option value="Funcionario">Redes Sociais</option>
+        <td><select list="valor_titulo" id="escrita" class="body" name="categoria_titulo">
+        <option value="Empresas">Empresas</option>
+        <option value="Email">Email</option>
+        <option value="Serviços">Serviços</option>
+        <option value="Redes Sociais">Redes Sociais</option>
         <option value="Tecnologia">Tecnologia</option>
-        <option value="Aluguel">Sites</option>
+        <option value="Sites">Sites</option>
+        <option value="Funcionario">Funcionario</option>
         </select></td></tr>
 
-        <tr><td><label for="valor_titulo" id="escrita">Usuario: </label></td>
-          <td><input type="text" id="lname" name="emissao_titulo"></td></tr>
+        <tr><td><label for="emissao_titulo" id="escrita">Data de Emissão: </label></td>
+          <td><input type="date" id="lname" name="emissao_titulo"></td></tr>
       
-      <tr><td><label for="valor_titulo" id="escrita">Data de Vencimento: </label></td>
+      <tr><td><label for="vencimento_titulo" id="escrita">Data de Vencimento: </label></td>
       <td><input type="date" id="lname" name="vencimento_titulo"></td></tr>
 
       <tr><td><input type="submit" id="botão1" class="button" value="Submit">
@@ -97,7 +41,8 @@
     
     </form>
   </table>
-  <button id="atualizar" id="botão1" class="button" onclick="window.location.href = 'https://senhas.onrender.com/mostrar';">Mostrar</button>
+  <button id="atualizar" id="botão1" class="button" onclick="window.location.href = 'http://localhost:31000/mostrar';">Mostrar</button>
+  <button id="atualizar" id="botão1" class="button" onclick="window.location.href = 'http://localhost:31000';">Sair</button>
 
     <script src="script.js"></script>
 

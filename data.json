@@ -1,23 +1,51 @@
 [
     {
-        "nome_titulo": "Tiago ",
-        "valor_titulo": "1811 Tiago ",
+        "nome_titulo": null,
+        "valor_titulo": null,
+        "categoria_titulo": null,
+        "emissao_titulo": null,
+        "vencimento_titulo": null
+    },
+    {
+        "nome_titulo": "Leoni",
+        "valor_titulo": "3500",
         "categoria_titulo": "Funcionario",
-        "emissao_titulo": "Tiago ",
-        "vencimento_titulo": ""
+        "emissao_titulo": "2023-07-04",
+        "vencimento_titulo": "2023-07-07"
     },
     {
-        "nome_titulo": "terto.outlook.com.br",
-        "valor_titulo": "Electroball4563",
-        "categoria_titulo": "Tecnologia",
-        "emissao_titulo": "Leoni",
-        "vencimento_titulo": "2023-06-25"
+        "nome_titulo": "Internet",
+        "valor_titulo": "300",
+        "categoria_titulo": "Serviços",
+        "emissao_titulo": "2023-07-20",
+        "vencimento_titulo": "2023-07-27"
     },
     {
-        "nome_titulo": "terto.leoni@gmail.com",
-        "valor_titulo": "SEMsenha8899",
-        "categoria_titulo": "Tecnologia",
-        "emissao_titulo": "Leoni",
-        "vencimento_titulo": "2023-06-25"
+        "nome_titulo": "Leoni",
+        "valor_titulo": "400",
+        "categoria_titulo": "Serviços",
+        "emissao_titulo": "2023-07-05",
+        "vencimento_titulo": "2023-07-07"
+    },
+    {
+        "nome_titulo": "Michéle",
+        "valor_titulo": "4000",
+        "categoria_titulo": "Funcionario",
+        "emissao_titulo": "2023-07-01",
+        "vencimento_titulo": "2023-07-07"
+    },
+    {
+        "nome_titulo": "Tiago",
+        "valor_titulo": "1200",
+        "categoria_titulo": "Funcionario",
+        "emissao_titulo": "2023-07-01",
+        "vencimento_titulo": "2023-07-07"
+    },
+    {
+        "nome_titulo": "Leoni",
+        "valor_titulo": "500",
+        "categoria_titulo": "Funcionario",
+        "emissao_titulo": "2023-07-04",
+        "vencimento_titulo": "2023-07-07"
     }
 ]

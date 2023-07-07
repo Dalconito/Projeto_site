@@ -1,50 +1,68 @@
 <!DOCTYPE html>
     <head>
     <title>Visualizar</title>
-    <style>
-        .body
-        {
-        background-color: rgba(0, 63, 63, 0.986);
-        color: rgba(239, 227, 227, 0.936);
-        } 
-        #tabela 
-        {
-        font-size: 30px;
-        border-collapse: collapse;
-        width: 100%; border: 1px solid black;
-        }
-        td 
-        {
-        border: 1px solid black;
-        }
-    </style>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="fotos/LT.jpg" type="image/x-icon">
+
     </head>
     <body class="body">
+
+        <table id="tabela">
+            <tr><th>Nome do Titulo </th><th>Valor </th><th>Categoria </th><th>Emissão </th>  <th>Vencimento </th></tr>
+            <% for (var a=0; a<filtro_arr.length; a++) { %>
+                <tr>
+                    <td id="td"> <%= leitura[filtro_arr[a]].nome_titulo         %></td>
+                    <td id="td"> <%= leitura[filtro_arr[a]].valor_titulo        %></td>
+                    <td id="td"> <%= leitura[filtro_arr[a]].categoria_titulo    %></td>
+                    <td id="td"> <%= leitura[filtro_arr[a]].emissao_titulo      %></td>
+                    <td id="td"> <%= leitura[filtro_arr[a]].vencimento_titulo   %></td>
+                </tr>
+            <% } %>
+
+        </table>
+
         <br><br><br>
-        <form action="https://senhas.onrender.com/inicial">
+        <form action="http://localhost:31000/inicial">
             <input type="submit" value="Voltar">
         </form>
 
         <table id="tabela">
-            <tr><th>Nome </th><th>Senha </th><th>Categoria </th><th>Usuario </th>  <th>Vencimento </th></tr>
+            <tr><th>Nome do Titulo </th><th>Valor </th><th>Categoria </th><th>Emissão </th>  <th>Vencimento </th></tr>
 
             <% for (var i=0; i<leitura.length-1; i++) { %>
                 <tr>
-                    <td> <%= leitura[i].nome_titulo %>           </td>
-                    <td> <%= leitura[i].valor_titulo %>          </td>
-                    <td> <%= leitura[i].categoria_titulo %>       </td>
-                    <td> <%= leitura[i].emissao_titulo %>        </td>
-                    <td> <%= leitura[i].vencimento_titulo %>     </td>
+                    <td id="td"> <%= leitura[i].nome_titulo         %></td>
+                    <td id="td"> <%= leitura[i].valor_titulo        %></td>
+                    <td id="td"> <%= leitura[i].categoria_titulo    %></td>
+                    <td id="td"> <%= leitura[i].emissao_titulo      %></td>
+                    <td id="td"> <%= leitura[i].vencimento_titulo   %></td>
                 </tr>
             <% } %>
         </table>
 
         <div id="impar">
             <form action="" target="_self" method="get">
-                <label for="nome_titulo" id="escrita">Nome do Titulo a Editar: </label>
-                <input type="text" id="fname" name="nome_titulo">
-                <input type="submit" id="botão1" class="button" value="Editar">
+
+                <label for="procura_titulo" id="escrita">Nome do Titulo a Procurar: </label>
+                <input type="text" id="fname" name="procura_titulo">
+                
+                <tr><td><label for="valor_titulo" id="escrita" >Categoria: </label></td>
+                    <td><select list="valor_titulo" id="escrita" class="body" name="categoria_titulo">
+                    <option value="null">Selecione uma Categoria</option>
+                    <option value="Empresas">Empresas</option>
+                    <option value="Email">Email</option>
+                    <option value="Serviços">Serviços</option>
+                    <option value="Redes Sociais">Redes Sociais</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Sites">Sites</option>
+                    <option value="Funcionario">Funcionario</option>
+                    </select></td></tr>
+
+                <input type="submit" id="botão1" class="button" value="Procurar">
+
                 <button id="Editar" id="botão1" class="button" onclick="atualizar()">Atualizar</button>
+
             </form> 
         </div><br><br><br>
     </body>

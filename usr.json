@@ -1,18 +1,6 @@
 [
     {
-        "login_usr": "leoni",
-        "senha_usr": "1233"
-    },
-    {
-        "login_usr": "mi",
-        "senha_usr": "pudim"
-    },
-    {
-        "login_usr": "leoni",
-        "senha_usr": "1234"
-    },
-    {
-        "login_usr": "leoleo",
-        "senha_usr": "1234"
+        "login_usr":"leoni",
+        "senha_usr":"1234"
     }
 ]

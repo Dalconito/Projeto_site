@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "alert": "^5.1.4",
+    "collect-js": "^0.0.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "node-notifier": "^10.0.1",

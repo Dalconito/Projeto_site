@@ -1,6 +1,7 @@
 const porta = 31000;
 var app = require('./config/server');
 
+
 var home = require('./app/routes/home')(app);
 var mostrar = require('./app/routes/mostrar')(app);
 var login = require('./app/routes/login')(app);
